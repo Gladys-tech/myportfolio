@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 0%;
+}
+.header{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.log span{
+    font-family: cursive;
+    font-size: 65px;
+}
+.nav-bar ul li{
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 5px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+}
+/*----------end of hearder--------*/
+
+.home{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.right-side img{
+    width: 300px;
+    height: 300px;
+    border-radius: 4px;
+}
+.left-side{
+    background-color: #2b6777;
+    color: #ffffff;
+    padding-left: 10px;
+}
