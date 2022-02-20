@@ -2,38 +2,168 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 20px;
     padding: 0%;
+    background-color: #f2f2f2;
 }
 .header{
     background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border:2px solid #ffffff;
+    border-radius: 60px;
+    margin-bottom: 10px;
+    height: 65px;
 }
 .log span{
     font-family: cursive;
     font-size: 65px;
+    color: #2b6777;
 }
 .nav-bar ul li{
     display: inline-block;
     margin-right: 10px;
     padding-right: 5px;
+    font-size: 25px;
+}
+.nav-bar ul li :hover{
+    background-color: #c8d8e4;
+    border: 1px solid #c8d8e4;
+    padding: 15px;
+    border-radius: 5px;
 }
 .nav-bar ul li a{
     text-decoration: none;
+    color: #2b6777;
 }
-/*----------end of hearder--------*/
+
 
 .home{
     display: grid;
     grid-template-columns: 30% 70%;
+    height:400px;
+}
+.right-side{
+    background-color: #c8d8e4;
 }
 .right-side img{
-    width: 300px;
-    height: 300px;
-    border-radius: 4px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 .left-side{
     background-color: #2b6777;
     color: #ffffff;
     padding-left: 10px;
 }
+.left-side span{
+    font-size: 40px;
+    font-weight: bold;
+}
+.left-side button{
+    background-color: #c8d8e4;
+    color: #2b6777;
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+/*----------end of home--------*/
+.about h2{
+    font-size: 40px;
+    font-weight: 200px;
+    color: #c8d8e4;
+}
+.about h3{
+    color: #2b6777;
+}
+
+.about{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    }
+    .about-section{
+    background: url(business-2717063_1920.jpg) no-repeat left;
+    background-size: 70%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+    }
+    .my-story{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 100px;
+    }
+    
+    .border{
+    height: 4px;
+    width: 150px;
+    background-color: #2b6777;
+    text-align: center;
+    }
+    .text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+    
+    }
+    
+    @media screen and (max-width: 1200px){
+    .my-story{
+    padding: 80px;
+    }
+    }
+    @media screen and (max-width: 1000px){
+    .about-section{
+    background-size:100% ;
+    padding: 100px 40px;
+    }
+    .my-story{
+    width:100% ;
+    }
+    }
+    @media screen and (max-width: 700px){
+    .about-section{
+    padding: 0;
+    }
+    .my-story{
+    padding: 60px;
+    }
+    }
+    
+    
+    
+    /*end of about me*/
+
+     /*contact me page*/
+     .contact{
+         display: grid;
+         grid-template-columns: 30% 70%;
+         background-color: #2b6777;
+         color: #ffffff;
+         padding: 15px;
+
+
+     }
+     .contact-info a{
+         color: #ffffff;
+     }
+     .contact-form input{
+         padding: 10px;
+         border-radius: 5px;
+     }
+     /*end of contact me*/
+
+     .footer{
+         background-color: #c8d8e4;
+         text-align: center;
+     }
+     
+    
