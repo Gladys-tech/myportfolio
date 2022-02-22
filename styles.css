@@ -49,8 +49,9 @@ body{
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 80px;
+    margin-left: 70px;
+    
 }
 .left-side{
     background-color: #2b6777;
@@ -69,7 +70,83 @@ body{
     border-radius: 4px;
     margin-bottom: 10px;
 }
+@media screen and (max-width: 800px){
+    .home{
+        display: block;
+    }
+}
+
 /*----------end of home--------*/
+.about{
+    background-color: #2b6777;
+}
+.about h2{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+}
+.about h2 span{
+    color: green;
+}
+.info{
+    padding-left: 30px;
+}
+.info h3{
+    color: #ffffff;
+}
+.about-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.info ul li{
+    color: #ffffff;
+    list-style: none;
+}
+.info ul li span{
+    color: black;
+}
+.summary .box1{
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.summary .box2{
+    background-color:rgba(0,0,0,0.5);
+    text-align: center;
+}
+.summary .box3{
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.summary .box4{
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.summary{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.summary .box4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.summary p{
+    color: #ffffff;
+}
+.summary h3{
+    color: green;
+}
+
+@media screen and (max-width: 800px){
+    .about-info{
+        display: block;
+        padding-left: 15px;
+    }
+}
+/*----------
 .about h2{
     font-size: 40px;
     font-weight: 200px;
@@ -137,10 +214,61 @@ body{
     padding: 60px;
     }
     }
+    --------*/
     
     
     
     /*end of about me*/
+
+/*project page*/
+.project{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    }
+    .project h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: cursive ;
+    color: #2b6777;
+    
+    }
+    .project p{
+    color: fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height:22px ;
+    padding: 10px;
+    }
+    .row{
+    margin-top: 5%;
+    display:flex ;
+    justify-content: space-between;
+    }
+    .project-col{
+    flex-basis: 31%;
+    background:#2b6777;
+    border-radius: 10px;
+    margin-bottom:5% ;
+    padding:20px 12px ;
+    box-sizing: border-box;
+    transition: 0.5s;
+    }
+    .project-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    }
+    .project-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.8);
+    }
+    @media(max-width: 700px){
+    .row{
+    flex-direction: column;
+    }
+    }
+    /*end of project*/
 
      /*contact me page*/
      .contact{
@@ -149,16 +277,48 @@ body{
          background-color: #2b6777;
          color: #ffffff;
          padding: 15px;
-
-
+     }
+     .contact-info{
+         padding-bottom: 60px;
      }
      .contact-info a{
          color: #ffffff;
+     }
+     .contact-info i{
+         padding-left: 10px;
+         padding-right: 10px;
+     }
+     .contact-form{
+         padding-top: 60px;
      }
      .contact-form input{
          padding: 10px;
          border-radius: 5px;
      }
+     @media screen and (max-width: 768px){
+.contact{
+    display: block;
+    text-align: center;
+    padding-left: 10px;
+}
+.contact-form {
+    padding-left: 20px;
+    padding-top: 0px;
+}
+    
+     }
+     @media screen and (max-width: 375px){
+         .contact{
+             padding-right: 60px;
+         }
+     }
+     @media screen and (max-width: 425px){
+        .contact-form {
+            padding-left: 40px;
+            padding-top: 0px;
+        } 
+     }
+     
      /*end of contact me*/
 
      .footer{
