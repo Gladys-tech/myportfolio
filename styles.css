@@ -17,7 +17,7 @@ body{
 .log span{
     font-family: cursive;
     font-size: 65px;
-    color: #2b6777;
+    color: #fae596;
 }
 .nav-bar ul li{
     display: inline-block;
@@ -70,9 +70,38 @@ body{
     border-radius: 4px;
     margin-bottom: 10px;
 }
-@media screen and (max-width: 800px){
+@media(max-width: 768px) {
+   .right-side img{
+       margin-top: 80px;
+       margin-left: 10px;
+   }
+   .home{
+       height: 350px;
+   }
+}
+@media(max-width: 700px){
     .home{
         display: block;
+    }
+    .right-side img{
+      margin-bottom: 70px;
+      margin-left: 100px;
+      width: 250px;
+    height: 250px;
+    border-radius: 130px;
+    }
+}
+@media(max-width: 375px) {
+    .right-side img{
+        margin-top: 80px;
+        margin-left: 40px;
+    }
+}
+
+@media(max-width: 425px) {
+    .right-side img{
+        margin-top: 80px;
+        margin-left: 55px;
     }
 }
 
@@ -84,9 +113,11 @@ body{
     color: #ffffff;
     text-align: center;
     padding-top: 10px;
+    font-size: 36px;
+    font-family: cursive;
 }
 .about h2 span{
-    color: green;
+    color: #fae596;
 }
 .info{
     padding-left: 30px;
@@ -101,9 +132,17 @@ body{
 .info ul li{
     color: #ffffff;
     list-style: none;
+    line-height: 20px;
+    padding: 0px 0px 0px 0px;
+
+}
+.info ul{
+    padding-left: 0px;
 }
 .info ul li span{
-    color: black;
+    color: #fae596;
+    padding-right: 10px;
+    
 }
 .summary .box1{
     background-color: rgba(0,0,0,0.5);
@@ -137,88 +176,94 @@ body{
     color: #ffffff;
 }
 .summary h3{
-    color: green;
+    color: #fae596;
 }
 
-@media screen and (max-width: 800px){
+@media(max-width: 700px){
     .about-info{
         display: block;
         padding-left: 15px;
     }
+    .about{
+        padding-top: 200px;
+        margin-top: 80px;
+    }
 }
-/*----------
-.about h2{
-    font-size: 40px;
-    font-weight: 200px;
-    color: #c8d8e4;
+@media(max-width: 425px){
+    .about{
+        padding-top: 350px;
+        margin-top: 80px;
+    }
 }
-.about h3{
-    color: #2b6777;
+/*-------END OF ABOUT ME-------*/
+.skills{
+    background-color: #2b6777;
+}
+.skills h2{
+    color: #ffffff;
+    text-align: center;
+    font-family: cursive;
+    font-size: 36px;
+}
+.skills h2 span{
+    color: #fae596;
+}
+.skills .summary{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.skills .summary .boxa{
+    background-color:rgba(0,0,0,0.5);
+    text-align: center;
+    width: 150px; 
+    border-radius: 15px;
+}
+.skills .summary .boxb{
+    background-color:rgba(0,0,0,0.5);
+    text-align: center;
+    width: 150px; 
+    border-radius: 15px;
+}
+.skills .summary .boxc{
+    background-color:rgba(0,0,0,0.5);
+    text-align: center;
+    width: 150px; 
+    border-radius: 15px;
+}
+.skills .summary .boxd{
+    background-color:rgba(0,0,0,0.5);
+    text-align: center;
+    width: 150px;
+    border-radius: 15px; 
+}
+.skills .summary .boxe{
+    background-color:rgba(0,0,0,0.5);
+    text-align: center;
+    width: 150px; 
+    border-radius: 15px;
+}
+.skills .summary .boxf{
+    background-color:rgba(0,0,0,0.5);
+    text-align: center;
+    width: 150px; border-radius: 15px;
+}
+@media(max-width: 425px){
+    .skills .summary{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
+@media(max-width: 320px){
+    .skills .summary{
+        display: block;
+        padding-left: 60px;
+    }
 }
 
-.about{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
-    }
-    .about-section{
-    background: url(business-2717063_1920.jpg) no-repeat left;
-    background-size: 70%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-    padding: 100px 0;
-    }
-    .my-story{
-    width: 55%;
-    float: right;
-    background-color: #fdfdfd;
-    padding: 100px;
-    }
-    
-    .border{
-    height: 4px;
-    width: 150px;
-    background-color: #2b6777;
-    text-align: center;
-    }
-    .text{
-    font-size: 13px;
-    color: #545454;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
-    
-    }
-    
-    @media screen and (max-width: 1200px){
-    .my-story{
-    padding: 80px;
-    }
-    }
-    @media screen and (max-width: 1000px){
-    .about-section{
-    background-size:100% ;
-    padding: 100px 40px;
-    }
-    .my-story{
-    width:100% ;
-    }
-    }
-    @media screen and (max-width: 700px){
-    .about-section{
-    padding: 0;
-    }
-    .my-story{
-    padding: 60px;
-    }
-    }
-    --------*/
-    
-    
-    
-    /*end of about me*/
+    /*end of my skills*/
 
 /*project page*/
 .project{
@@ -227,12 +272,14 @@ body{
     text-align: center;
     padding-top: 100px;
     }
-    .project h1{
-    font-size: 36px;
-    font-weight: 600;
+    .project h2{
+    font-size: 36px; 
     font-family: cursive ;
     color: #2b6777;
     
+    }
+    .project h2 span{
+        color: #fae596;
     }
     .project p{
     color: fff;
@@ -267,35 +314,67 @@ body{
     .row{
     flex-direction: column;
     }
+    @media(max-width: 768px){
+        .project-col{
+           margin-left: 20px;
+           margin-right: 20px;
+        }
+    }
+    
     }
     /*end of project*/
 
      /*contact me page*/
+     .contact-page{
+        background-color: #2b6777;
+        color: #ffffff;
+     }
+     .contact-page h2{
+         text-align: center;
+         padding-top: 20px;
+         font-size: 36px;
+         font-family: cursive;
+     }
+     .contact-page h2 span{
+         color: #fae596;
+     }
      .contact{
          display: grid;
-         grid-template-columns: 30% 70%;
-         background-color: #2b6777;
-         color: #ffffff;
-         padding: 15px;
+         grid-template-columns: 40% 60%;
+         padding: 20px;
      }
      .contact-info{
          padding-bottom: 60px;
      }
      .contact-info a{
          color: #ffffff;
+         text-decoration: none;
      }
      .contact-info i{
          padding-left: 10px;
          padding-right: 10px;
+        font-size: 25px; 
      }
+     .contact-info p{
+         line-height: 1px;
+    }
+    .contact-info b{
+        line-height: 1px;
+    }
      .contact-form{
          padding-top: 60px;
      }
      .contact-form input{
          padding: 10px;
-         border-radius: 5px;
+         border-radius: 10px;
+         background-color: #dddfd4;
      }
-     @media screen and (max-width: 768px){
+     .contact-form textarea{
+        background-color: #dddfd4;
+        border-radius: 10px;
+     }
+
+     @media(max-width: 700px){
 .contact{
     display: block;
     text-align: center;
@@ -305,18 +384,36 @@ body{
     padding-left: 20px;
     padding-top: 0px;
 }
+.contact-form textarea{
+    width: 350px;
+}
+.contact-form input{
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
     
      }
-     @media screen and (max-width: 375px){
-         .contact{
-             padding-right: 60px;
-         }
-     }
-     @media screen and (max-width: 425px){
+     
+     @media (max-width: 425px){
         .contact-form {
-            padding-left: 40px;
+            padding-left: 0px;
             padding-top: 0px;
         } 
+        .contact-form input{
+            width:150px ;
+        }
+        .contact-form textarea{
+            width: 200px;
+        }
+     }
+     @media(max-width: 1024px){
+        .contact-form textarea{
+            width: 360px;
+        }
+        .contact-form input{
+            padding-bottom: 20px;
+            margin-bottom: 10px;
+        }
      }
      
      /*end of contact me*/
