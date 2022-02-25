@@ -3,6 +3,7 @@ body{
     margin: 20px;
     padding: 0%;
     background-color: #f2f2f2;
+    scroll-behavior: smooth;
 }
 .header{
     background-color: #ffffff;
@@ -13,6 +14,11 @@ body{
     border-radius: 60px;
     margin-bottom: 10px;
     height: 65px;
+    
+}
+.log{
+    font-size: 25px;
+    color: #2b6777;
 }
 .log span{
     font-family: cursive;
@@ -69,6 +75,7 @@ body{
     height: 50px;
     border-radius: 4px;
     margin-bottom: 10px;
+    margin-top: 50px;
 }
 @media(max-width: 768px) {
    .right-side img{
@@ -105,7 +112,7 @@ body{
     }
 }
 
-/*----------end of home--------*/
+/*--------------------------------------------------end of home---------------------------*/
 .about{
     background-color: #2b6777;
 }
@@ -121,19 +128,23 @@ body{
 }
 .info{
     padding-left: 30px;
+    padding-bottom: 50px;
 }
 .info h3{
     color: #ffffff;
+    font-size: 25px;
 }
 .about-info{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 .info ul li{
     color: #ffffff;
     list-style: none;
-    line-height: 20px;
+    line-height: 30px;
     padding: 0px 0px 0px 0px;
+    font-size: 18px;
 
 }
 .info ul{
@@ -147,6 +158,7 @@ body{
 .summary .box1{
     background-color: rgba(0,0,0,0.5);
     text-align: center;
+    height: 135px;
 }
 .summary .box2{
     background-color:rgba(0,0,0,0.5);
@@ -159,6 +171,7 @@ body{
 .summary .box4{
     background-color: rgba(0,0,0,0.5);
     text-align: center;
+    height: 125px;
 }
 .summary{
     display: grid;
@@ -195,7 +208,7 @@ body{
         margin-top: 80px;
     }
 }
-/*-------END OF ABOUT ME-------*/
+/*-----------------------------------------END OF ABOUT ME------------------------*/
 .skills{
     background-color: #2b6777;
 }
@@ -263,7 +276,7 @@ body{
     }
 }
 
-    /*end of my skills*/
+    /*----------------------------------------end of my skills-------------------*/
 
 /*project page*/
 .project{
@@ -282,7 +295,7 @@ body{
         color: #fae596;
     }
     .project p{
-    color: fff;
+    color: #2b6777;
     font-size: 14px;
     font-weight: 300;
     line-height:22px ;
@@ -306,6 +319,7 @@ body{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+    color: #ffffff;
     }
     .project-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.8);
@@ -346,6 +360,9 @@ body{
      .contact-info{
          padding-bottom: 60px;
      }
+     .contact-info h3{
+         font-size: 30px;
+     }
      .contact-info a{
          color: #ffffff;
          text-decoration: none;
@@ -357,9 +374,12 @@ body{
      }
      .contact-info p{
          line-height: 1px;
+         padding-left: 40px;
     }
     .contact-info b{
         line-height: 1px;
+        padding-left: 0px;
+        color: #fae596;
     }
      .contact-form{
          padding-top: 60px;
@@ -401,9 +421,19 @@ body{
         } 
         .contact-form input{
             width:150px ;
+            
         }
         .contact-form textarea{
-            width: 200px;
+            width: 150px;
+            grid-area: 150px;
+            
+        }
+     }
+     @media(max-width: 375px){
+        .contact-form textarea{
+            padding-right:0px;
+            margin-right: 40px;
+            
         }
      }
      @media(max-width: 1024px){
