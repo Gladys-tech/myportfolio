@@ -91,26 +91,31 @@ body{
         display: block;
     }
     .right-side img{
-      margin-bottom: 70px;
-      margin-left: 100px;
       width: 250px;
     height: 250px;
     border-radius: 130px;
     }
 }
-@media(max-width: 375px) {
+@media(max-width: 320px){
     .right-side img{
-        margin-top: 80px;
-        margin-left: 40px;
+        text-align: center;
+        margin-left: 15px;
+        margin-bottom: 30px;
     }
+    
 }
+
 
 @media(max-width: 425px) {
     .right-side img{
-        margin-top: 80px;
-        margin-left: 55px;
+        margin-left: 60px;
+    }
+    .home{
+        height: 370px;
+        
     }
 }
+
 
 /*--------------------------------------------------end of home---------------------------*/
 .about{
@@ -291,9 +296,7 @@ body{
     color: #2b6777;
     
     }
-    .project h2 span{
-        color: #fae596;
-    }
+    
     .project p{
     color: #2b6777;
     font-size: 14px;
@@ -431,9 +434,7 @@ body{
      }
      @media(max-width: 375px){
         .contact-form textarea{
-            padding-right:0px;
-            margin-right: 40px;
-            
+            max-width: 160px; 
         }
      }
      @media(max-width: 1024px){
