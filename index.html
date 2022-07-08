@@ -21,7 +21,8 @@
         <div class="log">
             <i>Glad</i><span>K</span>
         </div>
-        <div class="nav-bar">
+        <div class="nav-bar" id="nav">
+          <div class="mob" ><img src="icon/close.jpg" onclick="hideMenu()"></div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about me">About </a></li>
@@ -31,6 +32,7 @@
             </ul>
                     
         </div>
+        <div class="mob"><img src="icon/menu 2.jpg" onclick="showMenu()"></div>
     </div>
   </section>
             <!----------End Of Header--------->
@@ -73,7 +75,7 @@
                 <p>Years Of Experience</p>
               </div>
               <div class="box2"> 
-                <h3>2+</h3>
+                <h3>3+</h3>
                 <p>Happy clients</p>
               </div>
               <div class="box3">
@@ -101,19 +103,19 @@
                 <p>CSS</p>
               </div>
               <div class="boxc">
-                <p>10%</p>
+                <p>80%</p>
                 <p>JAVASCRIPT</p>
               </div>
               <div class="boxd">
-                <p>10%</p>
-                <p>SASS</p>
+                <p>90%</p>
+                <p>DATABASES</p>
               </div>
               <div class="boxe">
-                <p>10%</p>
+                <p>80%</p>
                 <p>REACT</p>
               </div>
               <div class="boxf">
-                <p>10%</p>
+                <p>80%</p>
                 <p>NEXTJS</p>
               </div>
             </div>
@@ -123,7 +125,7 @@
         <!------------------------------End of My Skills------------------------------------>
 
     <section class="project" id="projects">
-      <h2><span>MY</span> PROJECTS </h2>
+      <h2>MY PROJECTS </h2>
       <p>Here are some of my projects since 2021</p>
 
       <div class=row>
@@ -184,7 +186,18 @@
         <p>Copyright &copy; 2022 gladys kyambadde</p>
     </div>
         
-        
+ 
+    <script>
+      var nav = document.getElementById("nav");
+  
+      function showMenu(){
+        nav.style.right="0";
+      }
+      function hideMenu(){
+        nav.style.right ="-200px";
+      }
+       
+   </script>
     
 </body>
 </html>

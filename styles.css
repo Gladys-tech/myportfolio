@@ -10,7 +10,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border:2px solid #ffffff;
+    border:2px solid #ffffff; 
     border-radius: 60px;
     margin-bottom: 10px;
     height: 65px;
@@ -42,6 +42,51 @@ body{
     color: #2b6777;
 }
 
+.mob{
+    display: none;
+    }
+    
+    @media(max-width: 700px){
+        .nav-bar ul li::after{
+            width:0;
+            content:'';
+            background-color: blue;
+            display: block;
+            height: 2px;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+            transition:0.5s;
+            }
+            .nav-bar:hover::after{
+            width: 100%;
+            }
+            .nav-bar ul li{
+                display: block;
+                }
+                .nav-bar {
+                position: absolute;
+                /* position: sticky; */
+                background:#c8d8e4 ;
+                height: 100vh;
+                width: 200px;
+                top: 0;
+                right:-200px;
+                text-align: left;
+                z-index:2 ;
+                transition: 1s;
+                }
+.mob{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    }
+    .nav-bar ul{
+        padding: 30px;
+        }
+    }
 
 .home{
     display: grid;
@@ -296,7 +341,7 @@ body{
     color: #2b6777;
     
     }
-    
+     
     .project p{
     color: #2b6777;
     font-size: 14px;
